@@ -1,4 +1,11 @@
+import Footer from './components/common/Footer'
+import Navbar from './components/common/Navbar'
 import './globals.css'
+
+export const metadata = {
+  title: 'Eco-Natural Senses',
+  description: 'Online Store',
+}
 
 export default function RootLayout({
   children,
@@ -7,12 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
