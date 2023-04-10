@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className='prose prose-headings:font-normal mx-auto min-w-full px-2 sm:px-4 md:px-8 lg:px-14'>
         <Navbar />
         {children}
         <Footer />
