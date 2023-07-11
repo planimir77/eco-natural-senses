@@ -1,0 +1,9 @@
+.menu_item {
+    @apply  px-3 py-3 border-b sm:border-none border-emerald-950 border-opacity-20 
+    sm:inline-flex  text-sm text-center relative sm:static;
+    /*items-center*/
+}
+.menu_item:hover {
+    /*@apply hover:bg-emerald-800 hover:text-[#fbf4a1];
+    */
+}

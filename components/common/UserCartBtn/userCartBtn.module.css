@@ -1,0 +1,3 @@
+.cart {
+    @apply relative text-base text-[#fbf4a1]  no-underline px-2;
+}

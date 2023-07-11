@@ -1,0 +1,9 @@
+.cart {
+  @apply lg:ml-2;
+}
+.cart img {
+  @apply ml-auto mr-auto;
+}
+.language_select {
+  @apply px-2 lg:px-4;
+}

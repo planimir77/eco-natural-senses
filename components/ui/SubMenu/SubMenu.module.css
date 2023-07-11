@@ -1,0 +1,17 @@
+.sub_menu {
+    @apply hidden z-10 sm:p-5 absolute  sm:top-[100%] left-0 w-full bg-slate-100;
+    /*sm:left-[8%]  md:left-[4%] w-[90%] top-[45px];*/
+}
+/* .sub_menu:hover {
+    @apply grid;
+} */
+.sub_menu ul {
+    @apply grid p-5 h-min bg-emerald-800 text-[#fbf4a1]  sm:bg-slate-100 sm:text-emerald-950
+    /**/
+}
+.sub_menu li {
+    @apply w-full;
+}
+.sub_menu li a {
+    @apply py-2 px-6 hover:bg-emerald-700 sm:hover:bg-emerald-800 sm:hover:text-[#fbf4a1] w-full;
+}

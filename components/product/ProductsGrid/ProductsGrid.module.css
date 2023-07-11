@@ -1,0 +1,15 @@
+.product_grid {
+    @apply flex flex-wrap gap-y-5 justify-evenly md:justify-around mt-8 mb-20;
+}
+.product_grid_item {
+    @apply w-[45%] md:w-[24%] p-2 rounded-lg hover:bg-slate-50;
+}
+.description {
+    @apply max-w-[250px] mx-auto;
+}
+.font_size {
+    @apply text-lg;
+}
+.currency_top {
+    @apply -top-[2px];
+}
