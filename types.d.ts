@@ -9,10 +9,12 @@ type SelectedLang = {
   imgUrl: string,
 }
 type NavItem = {
+  id: number,
   name: string,
   children: NavLink[],
 }
 type NavLink = {
+  id: number,
   name: string,
   href: string,
 }
@@ -23,6 +25,8 @@ type Collection = {
 }
 type CollectionData = {
   products?: Product[],
+  collectionName: string,
+  tags: string[],
   pages?: number 
 }
 type Product = {
