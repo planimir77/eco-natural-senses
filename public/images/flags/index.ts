@@ -1,0 +1,6 @@
+export {default as gb} from './flag-gb.svg'
+export {default as es} from './flag-es.svg'
+export {default as it} from './flag-it.svg'
+export {default as de} from './flag-de.svg'
+export {default as fr} from './flag-fr.svg'
+export {default as globe} from './globe.svg'
