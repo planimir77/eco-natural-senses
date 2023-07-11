@@ -1,0 +1,14 @@
+<svg 
+    width="30" 
+    height="30" 
+    viewBox="0 0 25 30"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs id="SvgjsDefs6800">
+        <linearGradient id="SvgjsLinearGradient6807">
+            <stop id="SvgjsStop6808" stop-color="#8f5e25" offset="0"></stop>
+            <stop id="SvgjsStop6809" stop-color="#fbf4a1" offset="0.5"></stop>
+            <stop id="SvgjsStop6810" stop-color="#8f5e25" offset="1"></stop>
+        </linearGradient>
+    </defs>
+  <path fill="url(#SvgjsLinearGradient6807)" d="M 17 8.04 a 4.48 4.48 0 1 0 -4.48 4.48 A 4.48 4.48 0 0 0 17 8.04 Z m -11.52 0 a 7.04 7.04 0 1 1 7.04 7.04 A 7.04 7.04 0 0 1 5.48 8.04 Z m 17.28 21.12 a 1.28 1.28 0 0 1 -1.28 -1.28 a 8.96 8.96 0 0 0 -17.92 0 a 1.28 1.28 0 1 1 -2.56 0 a 11.52 11.52 0 0 1 23.04 0 A 1.28 1.28 0 0 1 22.76 29.16 Z"></path>
+</svg>
