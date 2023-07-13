@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["cdn.shopify.com"],
+    domains: ["cdn.shopify.com", "www.si-nature.com"],
   },
 };
 
