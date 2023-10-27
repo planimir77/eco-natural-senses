@@ -23,12 +23,7 @@ type Collection = {
   link: string,
   products: Product[],
 }
-type CollectionData = {
-  products?: Product[],
-  collectionName: string,
-  tags: string[],
-  pages?: number 
-}
+
 type Product = {
   id: number,
   title: string,
@@ -98,3 +93,21 @@ type PreviewImage = {
   width: number
   src: string
 }
+type CollectionData = {
+  products?: Product[],
+  collection: string,
+  tags: string[],
+  pages?: number 
+}
+type QueryData = `${string | ''}&${string | ''}`
+
+interface CollectionQueryData extends BaseQueryData {
+  collectionName: string,
+}
+
+interface BaseQueryData {
+  page?: string = '1',
+  query?: QueryData,
+  products_on_page?: string = '32'
+}
+
