@@ -1,9 +1,11 @@
 export const toCapitalCase = (str: string) => {
-  const arr = str.split(" ");
+  const titleCase = str
+    .toLowerCase()
+    .split(' ')
+    .map(word => {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(' ');
 
-  for (var i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-  }
-
-  return arr.join(" ");
+  return titleCase;
 };
