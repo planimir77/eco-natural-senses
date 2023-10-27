@@ -1,8 +1,13 @@
 .product_grid {
-    @apply flex flex-wrap gap-y-5 justify-evenly md:justify-around mt-8 mb-20;
+    /* @apply flex flex-wrap gap-y-5 justify-evenly md:justify-around mt-8 mb-20; */
+}
+.product_grid:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .product_grid_item {
-    @apply w-[45%] md:w-[24%] p-2 rounded-lg hover:bg-slate-50;
+    @apply w-[50%] md:w-[25%] h-[266px] float-left p-2 rounded-lg hover:bg-slate-50;
 }
 .description {
     @apply max-w-[250px] mx-auto;

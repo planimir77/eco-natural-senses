@@ -1,5 +1,5 @@
 .sub_menu {
-    @apply hidden z-10 sm:p-5 absolute  sm:top-[100%] left-0 w-full bg-slate-100;
+    @apply z-10 sm:p-5 absolute  sm:top-[100%] left-0 w-full bg-slate-100;
     /*sm:left-[8%]  md:left-[4%] w-[90%] top-[45px];*/
 }
 /* .sub_menu:hover {
