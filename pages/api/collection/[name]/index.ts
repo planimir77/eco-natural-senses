@@ -38,7 +38,7 @@ export default async function GET(req: NextApiRequest, res: NextApiResponse) {
 
     const client = await clientPromise;
     // =========== Database Name ============
-    const db = client.db("ens");
+    const db = client.db("eco-natural-senses");
     let doc;
     let count: number;
     // const tags: string[] = await db.collection("products").distinct("tags", { $or: collectionFilter });
