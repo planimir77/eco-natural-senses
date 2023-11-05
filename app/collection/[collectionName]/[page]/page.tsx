@@ -1,4 +1,5 @@
 import ProductsGrid from "components/product/ProductsGrid/ProductsGrid";
+import Container from "components/ui/Container";
 import Link from "next/link";
 import React from "react";
 import { getCollectionProducts } from "utils/getCollectionProducts";
@@ -17,7 +18,7 @@ export default async function Page({
   });
 
   return (
-    <div>
+    <Container>
        <h1>Collection: {params.collectionName}</h1>
       {/*<h1>
         page: {page} | from {collectionData.pages} | products:{" "}
@@ -38,6 +39,6 @@ export default async function Page({
       {collectionData.products && (
         <ProductsGrid products={collectionData.products} />
       )}
-    </div>
+    </Container>
   );
 }

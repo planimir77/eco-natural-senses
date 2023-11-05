@@ -1,4 +1,5 @@
 import ProductsGrid from "components/product/ProductsGrid/ProductsGrid";
+import Container from "components/ui/Container";
 import Link from "next/link";
 import React from "react";
 import { getCollectionProducts } from "utils/getCollectionProducts";
@@ -24,11 +25,11 @@ export default async function Page({
         tags.push(obj.tag);
       }
     }
-    console.log(JSON.stringify(sorted));
+    //console.log(JSON.stringify(sorted));
   }
 
   return (
-    <div>
+    <Container>
       <h1>Collection: {params.collectionName}</h1>
       {/* <h1>
         products: {collection.products && collection.products.length} | pages{" "}
@@ -46,6 +47,6 @@ export default async function Page({
       <div>
         {collection.products && <ProductsGrid products={collection.products} />}
       </div>
-    </div>
+    </Container>
   );
 }
