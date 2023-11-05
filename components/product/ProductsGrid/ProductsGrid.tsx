@@ -7,14 +7,15 @@ import Price from "components/ui/Price/Price";
 
 interface Props {
   products: Product[];
+  
 }
-function ProductsGrid({ products }: Props) {
+async function ProductsGrid({ products }: Props) {
   return (
     <div className={cn(s.product_grid)}>
       {products.map((product) => (
         <div key={product.id} className="px-4">
           <div className={cn(s.product_grid_item)}>
-            <Link href={`product/${product.handle}`}>
+            <Link href={`/product/${product.handle}`}>
               <div className="product-grid-image">
                 <div className="product-grid-image--centered">
                   <div className="relative">
@@ -31,7 +32,7 @@ function ProductsGrid({ products }: Props) {
                     </div>
                     <Image
                       className="mx-auto image-spinner"
-                      src={product.media[0].src}
+                      src={product.media[0].src[0]=='h' ? product.media[0].src : 'https:'+ product.media[0].src}
                       alt={product.media[0].alt || product.variants[0].name}
                       width={250}
                       height={250 / 1.77}
@@ -41,7 +42,7 @@ function ProductsGrid({ products }: Props) {
                   <noscript>
                     <Image
                       className="image-spinner"
-                      src={product.media[0].src}
+                      src={product.media[0].src[0]=='h' ? product.media[0].src : 'https:'+ product.media[0].src}
                       alt={product.media[0].alt || product.variants[0].name}
                       width={250}
                       height={250 / 1.77}
@@ -65,4 +66,4 @@ function ProductsGrid({ products }: Props) {
   );
 }
 
-export default ProductsGrid;
+export default ProductsGrid as unknown as (props: Props) => JSX.Element;
