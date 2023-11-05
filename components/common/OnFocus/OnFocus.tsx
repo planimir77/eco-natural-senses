@@ -3,7 +3,6 @@ import React from "react";
 
 
 interface Props {
-  //onFocusProducts?: any;
   onFocusProducts?: Product[];
 }
 
