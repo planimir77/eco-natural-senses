@@ -1,8 +1,12 @@
 import * as cheerio from "cheerio";
 
-const URL = "https://www.si-nature.com/";
+const URL = process.env.SI_NATURE;
 
 export const getOnFocusData = async () => {
+  if (!URL) {
+    console.error('No URL Provided')
+    return null;
+  }
   const html = await fetch(URL, { next: { revalidate: 10 } })
     .then(function (response) {
       // The API call was successful!
@@ -26,6 +30,5 @@ export const getOnFocusData = async () => {
     const obj = JSON.parse($($(element).find("script")[0]).text());
     result.push(obj);
   }
-  console.log('Onfocus data:' + result.length)
   return result;
 };
