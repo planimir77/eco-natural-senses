@@ -16,7 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body className='mx-auto'>
         <Header />
+        <main className="mx-auto min-w-full px-4 sm:px-8 sm:py-5 md:px-8 md:py-10 lg:px-14 lg:py-14">
           {children}
+        </main>
         <Footer />
       </body>
     </html>
