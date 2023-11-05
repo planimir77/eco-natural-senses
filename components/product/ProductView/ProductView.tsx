@@ -48,7 +48,7 @@ export const ProductView = ({ product, relatedProducts }: ProductViewProps) => {
             <div className="grid grid-rows-[fit-content(100px),fit-content(100px)] md:grid-rows-[fit-content(100px),fit-content(100px)] gap-8 md:gap-10 mb-10">
               <div className="product-photo-container">
                 <Image
-                  src={'https://'+ product.media[0].src}
+                  src={'http:'+ product.media[0].src}
                   alt={product.variants[0].name}
                   className={cn(`w-[100%] h-[${
                     680 / product.media[0].aspect_ratio
@@ -65,7 +65,7 @@ export const ProductView = ({ product, relatedProducts }: ProductViewProps) => {
                   <li key={img.id} className="mx-auto">
                     <Image
                       className="image-spinner"
-                      src={'https://'+ img.src}
+                      src={'http:'+ img.src}
                       alt={img.alt}
                       width={img.width / 16}
                       height={img.height / 16}
@@ -75,7 +75,7 @@ export const ProductView = ({ product, relatedProducts }: ProductViewProps) => {
                 ))}
                 {/* <li className="">
                   <Image
-                    src={product.media[0].src}
+                    src={'http:'+ product.media[0].src}
                     alt={product.variants[0].name}
                     width={160}
                     height={160 / product.media[0].aspect_ratio}
@@ -86,7 +86,7 @@ export const ProductView = ({ product, relatedProducts }: ProductViewProps) => {
                 </li>
                 <li className="">
                   <Image
-                    src={product.media[1].src}
+                    src={'http:'+ product.media[1].src}
                     alt={product.variants[0].name}
                     
                     width={160}
@@ -98,7 +98,7 @@ export const ProductView = ({ product, relatedProducts }: ProductViewProps) => {
                 </li>
                 <li className="">
                   <Image
-                    src={product.media[2].src}
+                    src={'http:'+ product.media[2].src}
                     alt={product.variants[0].name}
                     width={160}
                     height={160 / product.media[2].aspect_ratio}
