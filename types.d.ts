@@ -21,7 +21,7 @@ type NavLink = {
 type Collection = {
   name: string,
   link: string,
-  products: Product[],
+  productsHandle: string[]
 }
 
 type Product = {
