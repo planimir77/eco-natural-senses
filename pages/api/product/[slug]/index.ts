@@ -9,8 +9,7 @@ export default async function GET(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  debugger;
-  const URL = `https://www.si-nature.com/products/${req.query.slug}`;
+  const URL = `${process.env.SI_NATURE}/products/${req.query.slug}`;
   const html = await fetch(URL, { next: { revalidate: 0 } })
     .then(function (response) {
       // The API call was successful!
