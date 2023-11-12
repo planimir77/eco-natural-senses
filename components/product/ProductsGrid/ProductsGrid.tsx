@@ -12,7 +12,7 @@ interface Props {
 async function ProductsGrid({ products }: Props) {
   return (
     <div className={cn(s.product_grid)}>
-      {products.map((product) => (
+      {products && products.map((product) => (
         <div key={product.id} className="px-4">
           <div className={cn(s.product_grid_item)}>
             <Link href={`/product/${product.handle}`}>
