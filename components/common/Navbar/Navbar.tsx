@@ -2,7 +2,7 @@ import cn from "clsx";
 import Link from "next/link";
 import React, { FC, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import s from "./navbar.module.css";
+import s from "./Navbar.module.css";
 import UserCartBtn from "../UserCartBtn";
 import navItems from "@lib/navbar-items";
 import MenuItem from "components/ui/MenuItem/MenuItem";
