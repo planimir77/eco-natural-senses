@@ -17,7 +17,7 @@ export default function HomeSlider() {
   return (
     <>
       <div
-        className="relative pb-14 mb-10"
+        className="relative pb-14 my-10"
       >
         {/* <!--Carousel indicators--> */}
         <div
