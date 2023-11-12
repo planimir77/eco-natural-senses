@@ -1,0 +1,4 @@
+.heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    @apply pt-6 text-2xl text-slate-800;
+}
