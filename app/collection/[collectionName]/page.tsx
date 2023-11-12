@@ -1,3 +1,4 @@
+import { GetStaticProps, GetStaticPropsResult } from "next";
 import ProductsGrid from "components/product/ProductsGrid/ProductsGrid";
 import Container from "components/ui/Container";
 import Link from "next/link";
@@ -29,7 +30,7 @@ export default async function Page({
   }
 
   return (
-    <Container>
+    <>
       <h1>Collection: {params.collectionName}</h1>
       {/* <h1>
         products: {collection.products && collection.products.length} | pages{" "}
@@ -47,6 +48,6 @@ export default async function Page({
       <div>
         {collection.products && <ProductsGrid products={collection.products} />}
       </div>
-    </Container>
+    </>
   );
 }

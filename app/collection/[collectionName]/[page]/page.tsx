@@ -18,7 +18,7 @@ export default async function Page({
   });
 
   return (
-    <Container>
+    <>
        <h1>Collection: {params.collectionName}</h1>
       {/*<h1>
         page: {page} | from {collectionData.pages} | products:{" "}
@@ -39,6 +39,6 @@ export default async function Page({
       {collectionData.products && (
         <ProductsGrid products={collectionData.products} />
       )}
-    </Container>
+    </>
   );
 }

@@ -30,7 +30,7 @@ export default async function Page({ params }: Props) // }: {
   // console.log(JSON.stringify(tags))
 
   return (
-    <Container>
+    <>
       <h1>Collection: {collectionName}</h1>
       {/* <div>page: {page}</div>
       <div>query: {query}</div>
@@ -56,6 +56,6 @@ export default async function Page({ params }: Props) // }: {
           <ProductsGrid products={collectionData.products} />
         )}
       </div>
-    </Container>
+    </>
   );
 }
