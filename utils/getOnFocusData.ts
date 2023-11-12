@@ -7,7 +7,7 @@ export const getOnFocusData = async () => {
     console.error('No URL Provided')
     return null;
   }
-  const html = await fetch(URL, { next: { revalidate: 10 } })
+  const html = await fetch(URL, { cache: 'no-store' })
     .then(function (response) {
       // The API call was successful!
       return response.text();
